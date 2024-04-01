@@ -6,7 +6,7 @@ import { Button } from "./style";
 const Navbar = () => {
   return (
     <div className="w-full rounded-2xl border border-[var(--black-neutral3)] glass py-[10px] px-5 flex items-center justify-between">
-      <span className="text-white text-4xl">
+      <span className="text-white text-4xl active:text-[aqua]">
         <AiOutlineMenu />
       </span>
 
