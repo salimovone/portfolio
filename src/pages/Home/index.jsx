@@ -1,10 +1,9 @@
 import React from 'react'
-import Effect from '../../components/Effect'
 
 const Home = () => {
   return (
     <div>
-        <Effect />
+      home
     </div>
   )
 }
