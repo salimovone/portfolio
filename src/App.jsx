@@ -4,29 +4,12 @@ import Home from "./pages/Home";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useDispatch } from "react-redux";
-import { setMobile } from "./redux/navbarSlice";
 
 function App() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const dispatch = useDispatch()
-
-  const handleResize = () => {
-    setScreenWidth(window.innerWidth);
-  };
 
   useEffect(() => {
     Aos.init();
     Aos.refresh();
-    window.addEventListener("resize", handleResize);
-    if (screenWidth > 1040){
-      dispatch(setMobile(false))
-    } {
-      dispatch(setMobile(true))
-    }
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
 
