@@ -18,21 +18,22 @@ const Navbar = () => {
           Salimov<span className="text-[aqua]">ONE</span>
         </Link>
       )}
-
-      <ul className="navLinks flex gap-2 text-white">
-        <Li>
-          <Link to={"/"}>Home</Link>
-        </Li>
-        <Li>
-          <Link to={"/about"}>About</Link>
-        </Li>
-        <Li>
-          <Link to={"/blog"}>Blog</Link>
-        </Li>
-        <Li>
-          <Link to={"/contact"}>Contact</Link>
-        </Li>
-      </ul>
+      {!mobile && (
+        <ul className="navLinks flex gap-2 text-white">
+          <Li>
+            <Link to={"/"}>Home</Link>
+          </Li>
+          <Li>
+            <Link to={"/about"}>About</Link>
+          </Li>
+          <Li>
+            <Link to={"/blog"}>Blog</Link>
+          </Li>
+          <Li>
+            <Link to={"/contact"}>Contact</Link>
+          </Li>
+        </ul>
+      )}
 
       <div className="flex text-white gap-4 items-center justify-center">
         <button className="active:text-[aqua]">Let's Talk</button>
