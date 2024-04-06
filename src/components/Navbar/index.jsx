@@ -1,11 +1,12 @@
 import { CgArrowTopRightO } from "react-icons/cg";
 import { AiOutlineMenu } from "react-icons/ai";
-import React, { useState } from "react";
+import React from "react";
 import { Button, Li } from "./style";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
-  const [mobile, setMobile] = useState(false);
+  const mobile = useSelector(state => state.navbar.mobile)
 
   return (
     <div className="w-full rounded-2xl border border-[var(--black-neutral3)] glass py-[10px] px-5 flex items-center justify-between">
