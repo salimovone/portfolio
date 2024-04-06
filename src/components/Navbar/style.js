@@ -8,3 +8,10 @@ export const Button = styled.button`
         background-color: aqua;
     }
 `
+
+export const Li = styled.li`
+    &:hover{
+        color: aqua;
+        cursor: pointer;
+    }
+`
